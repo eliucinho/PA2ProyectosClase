@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>uth</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Formulario</h1>
+        <form action="index.html" method="POST">
+            Escribir el nombre:
+            <input type="text" name="txtTexto" placeholder="nombre persona">
+            <br>
+            Escribir apellido:
+            <input type="text" name="txtApellido" placeholder="apellido persona">
+            <br>
+            Contraseña:
+            <input type="password" name="contrasenia">
+            <br>
+            Ejemplo de opciones
+            <br>
+            genero:
+            <input type="radio" name="genero" value="M">Masculino
+            <input type="radio" name="genero" value="F">Femenino
+            <input type="radio" name="genero" value="O">Otro
+            <br>
+            Ejemplo de Checkbox
+            <br>
+            pasatiempos:
+            <input type="checkbox" name="pasatiempo1" value="B">Bicicleta
+            <input type="checkbox" name="pasatiempo2" value="V">Video Juegos
+            <input type="checkbox" name="pasatiempo3" value="P">Bailar Punta
+            <br>
+            Control de numeros
+            <br>
+            telefono: <input type="number" name="telefono" min="0" max="100">
+            <br>
+            precios: <input type="range" name="precio" min="0" max="2000">
+            <br>
+            telefono: <input type="tel" name="celular">
+            <br>
+            Control de Lista
+            <br>
+            Paises: <input list="fuentePaises" name="paises">
+            <datalist id="fuentePaises">
+                <option value="Honduras">
+                <option value="Nicaragua">
+                <option value="El Salvador">
+                <option value="Panama">
+                <option value="Guatemala">
+            </datalist>
+            <br>
+            Municipios:
+            <select name="municipio" >
+                <option value="TGU">Tegucigalpa</option>
+                <option value="COM">Comayagua</option>
+                <option value="SIG">Siguatepeque</option>
+                <option value="SPS">San pedro sula</option>                
+            </select>
+            <br>
+            Fecha de Nacimiento:
+            <input type="Date" name="fechaNacimiento">
+            <br>
+            <button type="button" onclick="alert('hola mundo: '+txtApellido.value)">Saludar</button>
+            <button type="reset">limpiar</button>
+            <input type="submit" value="enviar informacion">
+        </form>
+    </body>
+</html>

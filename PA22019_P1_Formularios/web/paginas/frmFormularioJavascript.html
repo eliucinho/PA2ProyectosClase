@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>uth</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Formulario</h1>
+        <form action="index.html" method="POST"
+              oninput="resultado.value=parseInt(valorA.value)+parseInt(valorB.value)"
+              >
+            Valor A:
+            <input type="text" name="valorA" >
+            <br>
+            Valor B:
+            <input type="text" name="valorB" >
+            <br>
+            <output name="resultado"></output>
+            <br>
+            <button type="button" onclick="alert('hola mundo ')">Saludar</button>
+            <button type="reset">limpiar</button>
+            <input type="submit" value="enviar informacion">
+        </form>
+    </body>
+</html>
